@@ -1,9 +1,7 @@
 const esprima = require('esprima');
 const estraverse = require('estraverse');
-const { toSnake } = require('./stringUtils');
+const { toCamel } = require('./stringUtils');
 const { openFileToString } = require('./fileUtils');
-
-// let ast;
 
 module.exports = {
   /**
@@ -45,11 +43,22 @@ module.exports = {
     return allActionTypes;
   },
 
+  /**
+   * performs set difference
+   * @param newActions - actions from CLI
+   * @param allActions - actions parsed from AST of action types
+   * @returns {[]} - array of unique new actions
+   */
   filterNewActions: (newActions, allActions) => {
-    const snakeNewActions = newActions.map(action => toSnake(action));
-    return snakeNewActions.filter(x => !allActions.includes(x));
+    const camelNewActions = newActions.map(action => toCamel(action));
+    return camelNewActions.filter(x => !allActions.includes(x));
   },
 
+  /**
+   * converts array of AST nodes of constants to array of constant names
+   * @param nodes - array of AST nodes
+   * @returns {[]} - array of constant names
+   */
   convertNodesToConstantNames: nodes => {
     const actionNames = nodes.map(node => node.id.name);
     console.debug(`Existing action types: ${actionNames}`);

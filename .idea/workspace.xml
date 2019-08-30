@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81c524-6d5f-4099-abab-e6e53c0ad893" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/dudakp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/analysisUtils.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/filteUtils.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionCreators.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/actionTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/redux-generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analysisUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysisUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generators.js" afterDir="false" />
@@ -95,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.file testing">
+  <component name="RunManager" selected="npm.run">
     <configuration name="AST testing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -150,10 +137,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.run" />
-      <item itemvalue="npm.test" />
       <item itemvalue="Jest.AST testing" />
       <item itemvalue="Jest.file testing" />
+      <item itemvalue="npm.run" />
+      <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
       <list>
@@ -174,6 +161,7 @@
       <updated>1566975803025</updated>
       <workItem from="1566975805970" duration="25611000" />
       <workItem from="1567009255720" duration="1281000" />
+      <workItem from="1567176548635" duration="2095000" />
     </task>
     <servers />
   </component>
@@ -198,9 +186,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.js</url>
-          <line>35</line>
+          <line>36</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,6 +20,11 @@ const options = {
 };
 
 module.exports = {
+  /**
+   *  appeds text to EOF
+   * @param filename - path to file
+   * @param templates - stings to append
+   */
   appendToFile: (filename, ...templates) => {
     fs.appendFile(filename, templates.join(''), err => {
       if (err) {
@@ -29,6 +34,11 @@ module.exports = {
     });
   },
 
+  /**
+   * saves to file (rewrites)
+   * @param filename - path to file
+   * @param templates - stings to appends
+   */
   saveToFile: (filename, ...templates) => {
     fs.writeFile(
       filename,
@@ -41,14 +51,20 @@ module.exports = {
       }
     );
   },
+
+  /**
+   * reads file and returns content as string
+   * @param path - path to file
+   * @returns {string} - string from file
+   */
   openFileToString: path => {
     let toReturn;
     try {
       toReturn = fs.readFileSync(path).toString();
     } catch (e) {
-      console.warn('actionTypes file not found, creating new...', e);
+      console.warn(`${path} file not found, creating new...`, e);
     }
-    console.debug('File ', path, ' found. Adding to file...');
+    console.debug(`File ${path}  found. Adding to file...`);
     return toReturn;
   }
 };
