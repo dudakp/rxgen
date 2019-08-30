@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81c524-6d5f-4099-abab-e6e53c0ad893" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analysisUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stringUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generators.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +39,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -113,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566975803025</updated>
       <workItem from="1566975805970" duration="25611000" />
+      <workItem from="1567009255720" duration="1281000" />
     </task>
     <servers />
   </component>
@@ -124,7 +119,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

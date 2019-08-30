@@ -32,6 +32,7 @@ module.exports = {
   },
 
   generateReducer: () => {
+    if (actionTypesSnake.length===0) return;
     const imports = `import {
     ${actionTypesSnake.map(action => action)}\n} from "./actionTypes";\n\n`;
 

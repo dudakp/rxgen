@@ -40,5 +40,8 @@ module.exports = {
         console.log("The file was saved!");
       }
     );
+  },
+  openFile: (path) => {
+    return fs.readFileSync(path).toString();
   }
 };
