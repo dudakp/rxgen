@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 
-const readline = require("readline");
-const esprima = require("esprima");
-const estraverse = require("estraverse");
+const readline = require('readline');
+const { VariableDeclarator } = require('estraverse');
 
-const {createAST} = require("./src/analysisUtils");
-const {saveToFile, openFile} = require("./src/fileUtils");
+const {
+  createAST,
+  getNodesFromAST,
+  filterNewActions,
+  convertNodesToConstantNames
+} = require('./src/analysisUtils');
 const {
   generateReducer,
   generateSyncActionCreators,
   generateActionTypes,
   setupActions
-} = require("./src/generators");
+} = require('./src/generators');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -20,47 +23,28 @@ const rl = readline.createInterface({
 
 let newSyncActionTypes = [];
 let allActionTypes = [];
-let file = '';
 let finalSyncActionTypes = [];
+let ast;
 
-rl.question("Type (comma separated) sync Redux actions ", answer => {
-  newSyncActionTypes = answer.split(",").map(a => a.toUpperCase());
+rl.question('Type (comma separated) sync Redux actions ', answer => {
+  newSyncActionTypes = answer.split(',');
   finalSyncActionTypes = newSyncActionTypes;
-  console.log(`Your new actions are: ${newSyncActionTypes}`);
+  console.debug(`Your new actions are: ${newSyncActionTypes}`);
 
-  try {
-    file = openFile('./actionTypes.js');
-  } catch (e) {
-    console.log(e);
+  ast = createAST('./actionTypes.js');
+
+  const nodesFromAST = getNodesFromAST(ast, 'VariableDeclarator');
+  allActionTypes = convertNodesToConstantNames(nodesFromAST);
+
+  if (ast) {
+    finalSyncActionTypes = filterNewActions(newSyncActionTypes, allActionTypes);
   }
 
-  if (file) {
-    const ast = esprima.parseModule(file);
-    estraverse.traverse(ast, {
-      enter: function (node, parent) {
-        if (
-          node.type === "FunctionExpression" ||
-          node.type === "FunctionDeclaration"
-        )
-          return estraverse.VisitorOption.Skip;
-      },
-      leave: function (node, parent) {
-        if (node.type === "VariableDeclarator") {
-          allActionTypes.push(node.id.name);
-          console.log("all action types: ", allActionTypes);
-        }
-      }
-    });
-    finalSyncActionTypes = newSyncActionTypes.filter(
-      x => !allActionTypes.includes(x)
-    );
-  }
-
-  console.log("to append: ", finalSyncActionTypes);
+  console.debug('to append: ', finalSyncActionTypes);
 
   setupActions(finalSyncActionTypes);
   generateActionTypes();
   generateSyncActionCreators();
-  generateReducer();
+  //generateReducer();
   rl.close();
 });

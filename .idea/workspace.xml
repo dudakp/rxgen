@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81c524-6d5f-4099-abab-e6e53c0ad893" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/dudakp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/analysisUtils.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/filteUtils.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actionCreators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/actionTypes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/redux-generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysisUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysisUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stringUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stringUtils.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="434" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,19 +57,31 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
     <property name="js.last.introduce.type" value="CONST" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="node" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="$USER_HOME$/AppData/Roaming/npm/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\dudakp\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dudakp\Development\Learning\Tests\redux-generator\test\mocks" />
+      <recent name="C:\Users\dudakp\Development\Learning\Tests\redux-generator\test" />
+      <recent name="C:\Users\dudakp\Development\Learning\Tests\redux-generator\src" />
+      <recent name="C:\Users\dudakp\Development\Learning\Tests\redux-generator" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,19 +95,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.run">
-    <configuration name="debug" type="NodeJSConfigurationType" path-to-js-file="./index.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Jest.file testing">
+    <configuration name="AST testing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/analysisUtils.spec.js" />
+      <test-names>
+        <test-name value="AST testing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="file testing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/filteUtils.spec.js" />
+      <test-names>
+        <test-name value="file testing" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -86,13 +132,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="test" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Node.js.debug" />
       <item itemvalue="npm.run" />
+      <item itemvalue="npm.test" />
+      <item itemvalue="Jest.AST testing" />
+      <item itemvalue="Jest.file testing" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.run" />
+        <item itemvalue="Jest.file testing" />
+        <item itemvalue="Jest.AST testing" />
       </list>
     </recent_temporary>
   </component>
@@ -126,5 +192,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.js</url>
+          <line>35</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/redux_generator$AST_testing.info" NAME="AST testing Coverage Results" MODIFIED="1567171393928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

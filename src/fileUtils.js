@@ -1,14 +1,14 @@
-const fs = require("fs");
-const esformatter = require("esformatter");
+const fs = require('fs');
+const esformatter = require('esformatter');
 
 const options = {
   indent: {
-    value: "  "
+    value: '  '
   },
   lineBreak: {
     before: {
       // at least one line break before BlockStatement
-      BlockStatement: ">=1",
+      BlockStatement: '>=1',
       // only one line break before DoWhileStatementOpeningBrace
       DoWhileStatementOpeningBrace: 1
       // ...
@@ -21,27 +21,34 @@ const options = {
 
 module.exports = {
   appendToFile: (filename, ...templates) => {
-    fs.appendFile(filename, templates.join(""), err => {
+    fs.appendFile(filename, templates.join(''), err => {
       if (err) {
-        return console.log(err);
+        return console.debug(err);
       }
-      console.log("The file was saved!");
+      console.debug('The file was saved!');
     });
   },
 
   saveToFile: (filename, ...templates) => {
     fs.writeFile(
       filename,
-      esformatter.format(templates.join(""), options),
+      esformatter.format(templates.join(''), options),
       err => {
         if (err) {
-          return console.log(err);
+          return console.debug(err);
         }
-        console.log("The file was saved!");
+        console.debug('The file was saved!');
       }
     );
   },
-  openFile: (path) => {
-    return fs.readFileSync(path).toString();
+  openFileToString: path => {
+    let toReturn;
+    try {
+      toReturn = fs.readFileSync(path).toString();
+    } catch (e) {
+      console.warn('actionTypes file not found, creating new...', e);
+    }
+    console.debug('File ', path, ' found. Adding to file...');
+    return toReturn;
   }
 };

@@ -1,5 +1,5 @@
-const { toCamel, toSnake } = require("./stringUtils");
-const { appendToFile, saveToFile } = require("./fileUtils");
+const { toCamel, toSnake } = require('./stringUtils');
+const { appendToFile, saveToFile } = require('./fileUtils');
 
 let actionTypesSnake = [];
 let actionCreatorsCamel = [];
@@ -14,7 +14,7 @@ module.exports = {
     const actionTypesCode = actionTypesSnake.map(
       action => `export const ${action} = "${action}";\n`
     );
-    appendToFile("./actionTypes.js", actionTypesCode.join(""));
+    appendToFile('./actionTypes.js', actionTypesCode.join(''));
   },
 
   generateSyncActionCreators: () => {
@@ -28,11 +28,11 @@ module.exports = {
   payload
 });\n`
     );
-    appendToFile("./actionCreators.js", imports, actionCreators.join(""));
+    appendToFile('./actionCreators.js', imports, actionCreators.join(''));
   },
 
   generateReducer: () => {
-    if (actionTypesSnake.length===0) return;
+    if (actionTypesSnake.length === 0) return;
     const imports = `import {
     ${actionTypesSnake.map(action => action)}\n} from "./actionTypes";\n\n`;
 
@@ -55,11 +55,11 @@ module.exports = {
   };`;
 
     saveToFile(
-      "./reducer.js",
+      './reducer.js',
       imports,
       initialState,
       reducer0,
-      reducer1.join(""),
+      reducer1.join(''),
       reducer2
     );
   }
