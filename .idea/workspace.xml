@@ -178,7 +178,7 @@
       <workItem from="1567009255720" duration="1281000" />
       <workItem from="1567176548635" duration="2340000" />
       <workItem from="1567406402269" duration="1217000" />
-      <workItem from="1567417505353" duration="6376000" />
+      <workItem from="1567417505353" duration="6702000" />
     </task>
     <servers />
   </component>
@@ -197,18 +197,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.js</url>
-          <line>37</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/redux_generator$AST_testing.info" NAME="AST testing Coverage Results" MODIFIED="1567171393928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
