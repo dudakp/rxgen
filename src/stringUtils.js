@@ -1,12 +1,8 @@
+
+
 module.exports = {
   toCamel: s => {
-    return s.replace(/([-_]\w)/g, g => g[1].toUpperCase());
-    // return s.replace(/([-_][a-z])/g, $1 => {
-    //   return $1
-    //     .toUpperCase()
-    //     .replace('-', '')
-    //     .replace('_', '');
-    // });
+    return _.camelCase(s);
   },
 
   toSnake: str => {

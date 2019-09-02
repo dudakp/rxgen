@@ -5,16 +5,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionCreators.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/actionTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analysisUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysisUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stringUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stringUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/analysisUtils.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/analysisUtils.spec.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="434" />
@@ -35,6 +42,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1Q2jtvAKfcPt7vHkI042cXsfLiA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -46,7 +56,7 @@
     <property name="js.last.introduce.type" value="CONST" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SparkTwitterStreamAnalysis" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="node" />
@@ -58,6 +68,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettier.import.notification.dismissed" value="true" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\dudakp\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
@@ -119,6 +130,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="generate action creators" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <arguments value="g-creators" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -129,18 +151,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="test" />
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Jest.AST testing" />
       <item itemvalue="Jest.file testing" />
       <item itemvalue="npm.run" />
-      <item itemvalue="npm.test" />
+      <item itemvalue="npm.generate action creators" />
     </list>
     <recent_temporary>
       <list>
@@ -161,7 +176,9 @@
       <updated>1566975803025</updated>
       <workItem from="1566975805970" duration="25611000" />
       <workItem from="1567009255720" duration="1281000" />
-      <workItem from="1567176548635" duration="2095000" />
+      <workItem from="1567176548635" duration="2340000" />
+      <workItem from="1567406402269" duration="1217000" />
+      <workItem from="1567417505353" duration="6376000" />
     </task>
     <servers />
   </component>
@@ -186,9 +203,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.js</url>
-          <line>36</line>
+          <line>37</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

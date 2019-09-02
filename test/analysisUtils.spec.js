@@ -23,8 +23,12 @@ describe('AST testing', () => {
     expect(typeof createAST(invalidPathToMock)).toBe('undefined');
   });
 
-  it('should return array of nodes of "Variable Declarators" from defined AST', () => {
+  it('should return non-empty array of nodes from defined AST', () => {
     expect(getNodesFromAST(ast, 'VariableDeclarator').length).toBe(2);
+  });
+
+  it('should return non-empty array of VariableDeclarator nodes from defined AST', () => {
+    expect(getNodesFromAST(ast, 'VariableDeclarator'));
   });
 
   it('should convert nodes to array of constant names', () => {

@@ -1,6 +1,6 @@
 const esprima = require('esprima');
 const estraverse = require('estraverse');
-const { toCamel } = require('./stringUtils');
+const { _ } = require('lodash');
 const { openFileToString } = require('./fileUtils');
 
 module.exports = {
@@ -13,9 +13,8 @@ module.exports = {
     const toRead = openFileToString(pathToFile);
     if (toRead) {
       return esprima.parseModule(toRead);
-    } else {
-      return undefined;
     }
+    return undefined;
   },
 
   /**
@@ -50,7 +49,7 @@ module.exports = {
    * @returns {[]} - array of unique new actions
    */
   filterNewActions: (newActions, allActions) => {
-    const camelNewActions = newActions.map(action => toCamel(action));
+    const camelNewActions = newActions.map(action => action);
     return camelNewActions.filter(x => !allActions.includes(x));
   },
 

@@ -40,7 +40,7 @@ module.exports = {
    * @param templates - stings to appends
    */
   saveToFile: (filename, ...templates) => {
-    fs.writeFile(
+    fs.writeFileSync(
       filename,
       esformatter.format(templates.join(''), options),
       err => {

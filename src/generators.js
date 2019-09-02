@@ -1,4 +1,4 @@
-const { toCamel, toSnake } = require('./stringUtils');
+const _ = require('lodash');
 const { appendToFile, saveToFile } = require('./fileUtils');
 
 let actionTypesSnake = [];
@@ -6,8 +6,10 @@ let actionCreatorsCamel = [];
 
 module.exports = {
   setupActions: syncActions => {
-    actionTypesSnake = syncActions.map(action => toSnake(action));
-    actionCreatorsCamel = syncActions.map(action => toCamel(action));
+    actionTypesSnake = syncActions.map(action =>
+      _.snakeCase(action).toUpperCase()
+    );
+    actionCreatorsCamel = syncActions.map(action => _.camelCase(action));
   },
 
   generateActionTypes: () => {
@@ -24,11 +26,11 @@ module.exports = {
     const actionCreators = actionCreatorsCamel.map(
       action =>
         `export const ${action} = payload => ({
-  type: ${toSnake(action)},
+  type: ${_.snakeCase(action).toUpperCase()},
   payload
 });\n`
     );
-    appendToFile('./actionCreators.js', imports, actionCreators.join(''));
+    saveToFile('./actionCreators.js', imports, actionCreators.join(''));
   },
 
   generateReducer: () => {
