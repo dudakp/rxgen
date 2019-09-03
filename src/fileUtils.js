@@ -28,9 +28,10 @@ module.exports = {
   appendToFile: (filename, ...templates) => {
     fs.appendFile(filename, templates.join(''), err => {
       if (err) {
-        return console.debug(err);
+        console.debug(`File not found! \n${err}`);
+        return;
       }
-      console.debug('The file was saved!');
+      console.debug('The file was modified!');
     });
   },
 
@@ -45,7 +46,8 @@ module.exports = {
       esformatter.format(templates.join(''), options),
       err => {
         if (err) {
-          return console.debug(err);
+          console.debug(`File not found! \n${err}`);
+          return;
         }
         console.debug('The file was saved!');
       }
@@ -62,9 +64,8 @@ module.exports = {
     try {
       toReturn = fs.readFileSync(path).toString();
     } catch (e) {
-      console.warn(`${path} file not found, creating new...`, e);
+      console.warn(`${path} file not found, generating new file...`);
     }
-    console.debug(`File ${path}  found. Adding to file...`);
     return toReturn;
   }
 };

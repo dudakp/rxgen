@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81c524-6d5f-4099-abab-e6e53c0ad893" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stringUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileUtils.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +135,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="generate reducer" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <arguments value="g-reducer" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -149,6 +161,7 @@
       <item itemvalue="Jest.file testing" />
       <item itemvalue="npm.run" />
       <item itemvalue="npm.generate action creators" />
+      <item itemvalue="npm.generate reducer" />
     </list>
     <recent_temporary>
       <list>
@@ -171,7 +184,8 @@
       <workItem from="1567009255720" duration="1281000" />
       <workItem from="1567176548635" duration="2340000" />
       <workItem from="1567406402269" duration="1217000" />
-      <workItem from="1567417505353" duration="10635000" />
+      <workItem from="1567417505353" duration="10872000" />
+      <workItem from="1567493445314" duration="3572000" />
     </task>
     <servers />
   </component>
