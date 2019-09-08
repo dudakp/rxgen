@@ -21,4 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+actionTypes.js*
+actionCreators.js*
+reducer.js*
 #./.idea/workspace.xml
