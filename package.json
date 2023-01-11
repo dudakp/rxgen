@@ -14,7 +14,7 @@
   "author": "Pavol Dudak <palodudak@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "esformatter": "^0.10.0",
+    "esformatter": "^0.11.3",
     "esprima": "^4.0.1",
     "estraverse": "^4.3.0",
     "recast": "^0.18.2"
